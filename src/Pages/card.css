@@ -1,0 +1,13 @@
+
+.testimonialSwiper .swiper-slide {
+  transform: scale(0.8);
+  top: 50px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.testimonialSwiper .swiper-slide-active {
+  transform: scale(1);
+  top: 0;
+  opacity: 1;
+}
