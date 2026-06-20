@@ -15,7 +15,7 @@ const SendParcel = () => {
     const [receiverRegions, setReceiverRegions] = useState([])
     const axiosSecure = useAxiosSecure()
     useEffect(()=>{
-        fetch('/public/Data/districts.json').then(res=>res.json()).then(data=>setLocs(data))
+        fetch('/Data/districts.json').then(res=>res.json()).then(data=>setLocs(data))
     }, [setLocs])
     // console.log(user);
     
@@ -77,7 +77,7 @@ const SendParcel = () => {
     }
     const handleChangeRegion = (e, type) => {
         const selectedRegion = e.target.value;
-        console.log(selectedRegion);
+        // console.log(selectedRegion);
         const filterRegion = locs.filter(loc=>loc.region === selectedRegion);
         if (type === 'sender') {
             setSenderDisable(false);
