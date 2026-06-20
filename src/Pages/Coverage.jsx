@@ -8,7 +8,7 @@ const Coverage = () => {
     const [locs, setLocs] = useState([])
     const mapRef = useRef(null)
     useEffect(()=>{
-        fetch(`../../public/Data/districts.json`).then(res=>res.json()).then(data=>setLocs(data))
+        fetch(`../../Data/districts.json`).then(res=>res.json()).then(data=>setLocs(data))
     }, [])
     // console.log(locs);
     const handleSubmit = (e) => {
