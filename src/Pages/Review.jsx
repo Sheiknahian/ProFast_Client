@@ -16,7 +16,7 @@ const Review = () => {
     const [reviews, setReviews] = useState([])
     const {customer} = use(ImgContext);
     useEffect(()=>{
-        fetch(`../../public/Data/review.json`).then(res=>res.json()).then(datas=>setReviews(datas))
+        fetch(`../../Data/review.json`).then(res=>res.json()).then(datas=>setReviews(datas))
     }, [])
     return (
         <div>
