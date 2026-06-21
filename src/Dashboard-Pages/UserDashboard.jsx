@@ -289,7 +289,7 @@ const UserDashboard = () => {
                                         { 
                                             stepOrder.map((step, index) => 
                                             <li key={index} data-content={index <= currentIndex ? '✓' : '●'} className={`step 
-                                            ${index <= currentIndex ? 'step-success' : 'bg-gray-300'}`}>
+                                            ${index <= currentIndex ? 'step-success' : 'step-primary-content'}`}>
                                                 <p className='capitalize'>{step.split('-').join(' ')}</p>
                                                 <p className='text-[11px] opacity-70'>
                                                     {trackingData?.trackings?.[index] ? formatDateTime(trackingData?.trackings?.[index]?.trackingAt) : 'Pending'}
