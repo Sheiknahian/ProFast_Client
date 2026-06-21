@@ -216,7 +216,7 @@ const UserDashboard = () => {
                 <div className='flex justify-between'>
                     <h3 className='text-2xl font-bold'>Shipping list details</h3>
                     <form>
-                        <label className="input bg-white border-black">
+                        <label className="input bg-white border-gray-700">
                             <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <g
                                 strokeLinejoin="round"
@@ -289,7 +289,7 @@ const UserDashboard = () => {
                                         { 
                                             stepOrder.map((step, index) => 
                                             <li key={index} data-content={index <= currentIndex ? '✓' : '●'} className={`step 
-                                            ${index <= currentIndex ? 'step-success' : ''}`}>
+                                            ${index <= currentIndex ? 'step-success' : 'bg-gray-300'}`}>
                                                 <p className='capitalize'>{step.split('-').join(' ')}</p>
                                                 <p className='text-[11px] opacity-70'>
                                                     {trackingData?.trackings?.[index] ? formatDateTime(trackingData?.trackings?.[index]?.trackingAt) : 'Pending'}
