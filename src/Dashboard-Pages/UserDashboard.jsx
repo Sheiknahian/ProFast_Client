@@ -21,13 +21,13 @@ const last30Days = [...Array(30)].map((_, i) => {
     return d.getDate()
 });
 const statusColors = {
-  'parcel-created': 'badge bg-gray-400',
-  'parcel-confirmed': 'badge badge-info',
-  'rider-assigned': 'badge badge-primary',
-  'rider-accepted': 'badge badge-accent',
-  'rider-rejected': 'badge badge-error',
-  'in-transit': 'badge badge-warning',
-  'parcel-delivered': 'badge badge-success',
+  'parcel-created': 'badge bg-gray-400 border-none',
+  'parcel-confirmed': 'badge badge-info border-none',
+  'rider-assigned': 'badge badge-primary border-none',
+  'rider-accepted': 'badge badge-accent border-none',
+  'rider-rejected': 'badge badge-error border-none',
+  'in-transit': 'badge badge-warning border-none',
+  'parcel-delivered': 'badge badge-success border-none',
 };
 const stepOrder = [
   "parcel-created",
