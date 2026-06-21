@@ -216,7 +216,7 @@ const UserDashboard = () => {
                 <div className='flex justify-between'>
                     <h3 className='text-2xl font-bold'>Shipping list details</h3>
                     <form>
-                        <label className="input">
+                        <label className="input bg-white">
                             <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <g
                                 strokeLinejoin="round"
